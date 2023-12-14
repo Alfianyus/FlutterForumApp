@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Forum APP'),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.green,
         elevation: 0,
         centerTitle: true,
       ),
@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
               // ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black,
+                  backgroundColor: Colors.green,
                   elevation: 0,
                   padding: const EdgeInsets.symmetric(
                     horizontal: 45,
@@ -54,9 +54,7 @@ class _HomePageState extends State<HomePage> {
                   _postController.getAllPosts();
                 },
                 child: Obx(() {
-                  return _postController.isLoading.value
-                      ? const CircularProgressIndicator()
-                      : Text('Post');
+                  return _postController.isLoading.value ? const CircularProgressIndicator() : Text('Post');
                 }),
               ),
               const SizedBox(
@@ -77,7 +75,7 @@ class _HomePageState extends State<HomePage> {
                         itemCount: _postController.posts.value.length,
                         itemBuilder: (context, index) {
                           return Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 8.0),
+                            padding: const EdgeInsets.symmetric(vertical: 10.0),
                             child: postdata(
                               post: _postController.posts.value[index],
                             ),

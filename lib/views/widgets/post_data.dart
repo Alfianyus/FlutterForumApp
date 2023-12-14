@@ -27,7 +27,7 @@ class _postdataState extends State<postdata> {
       padding: EdgeInsets.all(10),
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Colors.blue[200],
+        color: Colors.green[200],
         borderRadius: BorderRadius.circular(8.0),
       ),
       child: Column(

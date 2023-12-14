@@ -24,7 +24,7 @@ class PostField extends StatelessWidget {
               width: double.infinity,
               height: 70,
               decoration: BoxDecoration(
-                color: Colors.blue[200],
+                color: Colors.green[200],
                 borderRadius: BorderRadius.circular(10),
               ),
               child: TextField(
