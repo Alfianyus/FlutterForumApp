@@ -15,8 +15,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final AuthenticationController _authenticationController =
-      Get.put(AuthenticationController());
+  final AuthenticationController _authenticationController = Get.put(AuthenticationController());
 
   @override
   Widget build(BuildContext context) {
@@ -55,10 +54,9 @@ class _LoginPageState extends State<LoginPage> {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black,
+                  backgroundColor: Colors.green,
                   elevation: 0,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                  padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                 ),
                 onPressed: () async {
                   await _authenticationController.login(

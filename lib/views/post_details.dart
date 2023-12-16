@@ -30,7 +30,7 @@ class _PostDetailsState extends State<PostDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.green,
         elevation: 0,
         centerTitle: true,
         title: Text(widget.post.user!.name!),
@@ -60,8 +60,7 @@ class _PostDetailsState extends State<PostDetails> {
                           itemBuilder: (context, index) {
                             return ListTile(
                               title: Text(
-                                _postController
-                                    .comments.value[index].user!.name!,
+                                _postController.comments.value[index].user!.name!,
                               ),
                               subtitle: Text(
                                 _postController.comments.value[index].body!,
@@ -77,7 +76,7 @@ class _PostDetailsState extends State<PostDetails> {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black,
+                  backgroundColor: Colors.green,
                   elevation: 0,
                   padding: const EdgeInsets.symmetric(
                     horizontal: 50,

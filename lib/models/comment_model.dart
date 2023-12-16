@@ -4,8 +4,7 @@
 
 import 'dart:convert';
 
-CommentModel commentModelFromJson(String str) =>
-    CommentModel.fromJson(json.decode(str));
+CommentModel commentModelFromJson(String str) => CommentModel.fromJson(json.decode(str));
 
 String commentModelToJson(CommentModel data) => json.encode(data.toJson());
 

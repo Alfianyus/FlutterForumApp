@@ -4,6 +4,8 @@
 
 import 'dart:convert';
 
+import 'package:forumapp/models/comment_model.dart';
+
 PostModel postModelFromJson(String str) => PostModel.fromJson(json.decode(str));
 
 String postModelToJson(PostModel data) => json.encode(data.toJson());
